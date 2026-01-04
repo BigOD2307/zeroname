@@ -134,7 +134,6 @@ export default function UploadSection({ onAnalyze, isAnalyzing, error, remaining
               ref={cvInputRef}
               type="file"
               accept=".pdf,.doc,.docx,image/*"
-              capture="environment"
               className="hidden"
               onChange={(e) => {
                 const file = e.target.files?.[0]
@@ -210,7 +209,6 @@ export default function UploadSection({ onAnalyze, isAnalyzing, error, remaining
                 ref={jobInputRef}
                 type="file"
                 accept=".pdf,.doc,.docx,image/*,.txt"
-                capture="environment"
                 className="hidden"
                 onChange={(e) => {
                   const file = e.target.files?.[0]
